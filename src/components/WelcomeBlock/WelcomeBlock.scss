@@ -1,0 +1,120 @@
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rem;
+
+  &__info {
+    max-width: 560rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    color: var(--c-btn-background);
+    font: var(--heading1);
+    &:nth-child(2) {
+      margin-bottom: 38rem;
+      @include tablet-small {
+        margin-bottom: 20rem;
+      }
+    }
+    @include tablet-small {
+      font: var(--heading1-tablet);
+    }
+    @include mobile {
+      text-align: center;
+      font: var(--heading1-mobile);
+    }
+  }
+
+  &__desc {
+    color: var(--c-desc);
+    font: var(--desc);
+    @include tablet-small {
+      max-width: 460rem;
+    }
+    @include mobile {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    @include desktop-small {
+      width: 50%;
+    }
+    @include tablet-large {
+      width: 45%;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+}
+.workspace {
+  display: flex;
+  margin-top: 48rem;
+  gap: 24rem;
+  @include tablet-small {
+    margin-top: 20rem;
+  }
+  @include mobile {
+    margin-inline: auto;
+    flex-direction: column-reverse;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 18rem;
+  }
+
+  &__btn {
+    padding: 12rem 46rem;
+    border-radius: 16rem;
+    background: var(--c-primary);
+    box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: var(--c-btn-background);
+    font: var(--btn-text);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-primary);
+      background: var(--c-btn-background);
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 29rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+
+    a {
+      transition: var(--transition);
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__img {
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: var(--c-desc);
+    font: var(--link);
+    @include mobile {
+      text-align: center;
+    }
+  }
+}

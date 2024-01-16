@@ -1,0 +1,52 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet-large: 1024px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-medium: 425px;
+$mobile-small: 380px;
+
+:root {
+  --html-fs: 1px;
+  --ff: "Roboto", sans-serif;
+  --transition: 0.2s all ease-in-out;
+
+  --c-primary: #ffae33;
+  --c-white: #fff;
+  --c-black: #000;
+  --c-thinkBlock-btn: #ffb0ae;
+  --c-startBlock-btn: #fc6d26;
+  --c-startBlock-bitbucket: #2684ff;
+  --c-btn-text: #f9f9f9;
+  --c-btn-background: #12100c;
+  --c-background: #f5f3f4;
+  --c-desc: rgba(18, 16, 12, 0.7);
+  --c-selectBlock-text: #999795;
+
+  --link: normal 400 16rem/24rem var(--ff);
+  --login: normal 400 14rem/20rem var(--ff);
+  --heading1: normal 700 80rem/88rem var(--ff);
+  --heading1-tablet: normal 700 60rem/60rem var(--ff);
+  --heading1-mobile: normal 700 45rem/40rem var(--ff);
+  --desc: normal 400 24rem/31.92rem var(--ff);
+  --btn-text: normal 700 18rem/22.5rem var(--ff);
+  --selectBlock-text: normal 700 54rem/63.72rem var(--ff);
+  --selectBlock-text-tablet: normal 700 46rem/46rem var(--ff);
+  --selectBlock-text-mobile: normal 700 38rem/35rem var(--ff);
+  --selectBlock-text2: normal 400 54rem/63.72rem var(--ff);
+  --selectBlock-text2-tablet: normal 400 46rem/46rem var(--ff);
+  --selectBlock-text2-mobile: normal 400 35rem/35rem var(--ff);
+  --thinkBlock-title: normal 700 32rem/40rem var(--ff);
+  --thinkBlock-btn: normal 700 16rem/16rem var(--ff);
+  --secureBlock-title: normal 700 54rem/71.82rem var(--ff);
+  --secureBlock-title-tablet: normal 700 46rem/46rem var(--ff);
+  --secureBlock-title-mobile: normal 700 38rem/38rem var(--ff);
+  --secureBlock-btn-text: normal 700 18rem/31.86rem var(--ff);
+  --statisticsBlock-name: normal 700 16rem/24rem var(--ff);
+  --startBlock-name: normal 400 20rem/20rem var(--ff);
+  --startBlock-btn: normal 400 14rem/16rem var(--ff);
+  --startBlock-link: normal 700 14rem/16rem var(--ff);
+  --footer-title: normal 700 13rem/19.5rem var(--ff);
+  --footer-desc: normal 400 13rem/19.5rem var(--ff);
+}

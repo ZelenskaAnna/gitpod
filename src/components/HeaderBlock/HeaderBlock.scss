@@ -1,0 +1,94 @@
+.header {
+  .container {
+    padding: 20rem 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo,
+  &__btn {
+    width: 135rem;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 48rem;
+    a {
+      color: rgba(18, 16, 12, 0.7);
+      font: var(--link);
+
+      &:hover {
+        color: var(--c-primary);
+      }
+    }
+    @include tablet {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.8);
+      transform: translateX(120%);
+      transition: var(--transition);
+      &.is-active {
+        transform: translateX(0);
+      }
+      a {
+        color: var(--c-white);
+        transition: var(--transition);
+        &:hover {
+          color: var(--c-primary);
+        }
+      }
+    }
+  }
+  &__burger {
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
+//   .material-design-icon__svg {
+// 	font-size: 40rem;
+//   }
+  &__close {
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+    .material-design-icon {
+      display: flex;
+    }
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+    color: var(--c-white);
+    background: var(--c-primary);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 30rem;
+  }
+  &__btn {
+    text-align: right;
+    a {
+      min-width: 82rem;
+      padding: 6rem 23rem;
+      display: inline-block;
+      color: var(--c-btn-text);
+      font: var(--login);
+      border-radius: 12rem;
+      background: var(--c-btn-background);
+
+      &:hover {
+        color: var(--c-primary);
+      }
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}

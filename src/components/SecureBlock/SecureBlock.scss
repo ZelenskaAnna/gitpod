@@ -1,0 +1,79 @@
+.secure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 177rem;
+  @include desktop-small {
+    margin-top: 90rem;
+  }
+  @include tablet-small {
+    margin-top: 70rem;
+  }
+
+  &__title {
+    color: var(--c-btn-background);
+    font: var(--secureBlock-title);
+    margin-bottom: 47rem;
+    @include desktop-small {
+      margin-bottom: 30rem;
+    }
+    @include tablet {
+      font: var(--secureBlock-title-tablet);
+    }
+    @include mobile {
+      font: var(--secureBlock-title-mobile);
+    }
+  }
+
+  &__img {
+    width: 80%;
+    border-radius: 14rem;
+    background: lightgray 50% / contain no-repeat;
+    box-shadow: -2rem 2rem 15rem 8rem rgba(255, 138, 0, 0.4);
+    @include desktop-small {
+      width: 65%;
+    }
+  }
+
+  &__desc {
+    color: var(--c-desc);
+    font: var(--desc);
+    text-align: center;
+    max-width: 877rem;
+    margin-top: 49rem;
+    margin-bottom: 45rem;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16rem;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10rem;
+      color: var(--c-btn-background);
+      font: var(--secureBlock-btn-text);
+      border-radius: 9rem;
+      background-color: var(--c-white);
+      box-shadow: 0rem 0.5rem 2rem 0rem rgba(0, 0, 0, 0.1);
+      padding: 7rem 12rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1rem solid #000;
+        z-index: -1;
+      }
+
+      &:hover::before {
+        border: 2rem solid #000;
+      }
+    }
+  }
+}

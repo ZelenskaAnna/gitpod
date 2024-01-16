@@ -1,0 +1,24 @@
+html {
+  font-size: var(--html-fs);
+  scroll-behavior: smooth;
+  @include tablet-large {
+    font-size: calc(var(--html-fs) * 0.9);
+  }
+  @include tablet-small {
+    font-size: calc(var(--html-fs) * 0.8);
+  }
+  @include mobile-small {
+    font-size: calc(var(--html-fs) * 0.7);
+  }
+}
+
+body {
+  font-family: var(--ff);
+  background-color: var(--c-background);
+}
+.container {
+  max-width: calc(1310px + 40px);
+  padding: 0 20px;
+  width: 100%;
+  margin-inline: auto;
+}

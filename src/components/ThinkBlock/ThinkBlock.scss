@@ -1,0 +1,88 @@
+.think {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160rem;
+  gap: 20rem;
+  @include desktop-small {
+    margin-top: 90rem;
+  }
+  @include tablet-small {
+    margin-top: 70rem;
+  }
+  @include mobile {
+    margin-inline: auto;
+    flex-direction: column-reverse;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 648rem;
+    max-height: 360rem;
+    margin-top: 56rem;
+    gap: 10rem;
+    @include tablet-small {
+      margin-top: 0rem;
+    }
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: var(--c-btn-background);
+    font: var(--thinkBlock-title);
+    margin-bottom: 8rem;
+  }
+
+  &__desc {
+    color: var(--c-desc);
+    font: var(--desc);
+  }
+
+  &__img {
+    @include desktop-small {
+      width: 45%;
+    }
+    @include mobile {
+      margin-inline: auto;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 16rem;
+
+    a {
+      color: var(--c-btn-background);
+      font: var(--thinkBlock-btn);
+      border-radius: 10.5rem;
+      box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.1);
+      transition: var(--transition);
+
+      &:nth-child(1) {
+        padding: 8rem 18rem;
+        background-color: var(--c-primary);
+
+        &:hover {
+          color: var(--c-primary);
+          background-color: var(--c-btn-background);
+        }
+      }
+      &:nth-child(2) {
+        padding: 8rem 24rem;
+        background-color: var(--c-thinkBlock-btn);
+
+        &:hover {
+          color: var(--c-thinkBlock-btn);
+          background-color: var(--c-btn-background);
+        }
+      }
+    }
+
+    @include mobile {
+      margin-inline: auto;
+    }
+  }
+}
